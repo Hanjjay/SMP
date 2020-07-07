@@ -6,11 +6,11 @@ from .models import PSD
 def index(request):
     return render(request, 'page/home.html')
 
-def analysis(request):
-    return render(request, 'page/analysis.html')
+def method(request):
+    return render(request, 'page/method.html')
 
-def map(request):
-    return render(request, 'page/map.html')
+def conclusion(request):
+    return render(request, 'page/conclusion.html')
 
-def summary(request):
-    return render(request, 'page/summary.html')
+def result(request):
+    return render(request, 'page/result.html')

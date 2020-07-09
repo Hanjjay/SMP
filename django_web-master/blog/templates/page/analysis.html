@@ -1,0 +1,92 @@
+{% extends "page/header.html" %}
+
+{% block content %}
+
+<div class="blog">
+  <div class="blog-content">
+
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Introduction</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>이 챕터에서는 </p>
+        </div>
+      </div>
+    </div>
+
+    <!--image split-->
+    <div class="row">
+      <h2>deceeased,released,infected</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/analysis/01_num_of_patients.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <!--image split-->
+    <div class="row">
+      <h2>Flow Chart</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/analysis/02_age_group.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+            <p>
+              위 표는 코로나 확진자수를 연령대별로 구분하여 차트로 나타낸 것으로 
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <!--image split-->
+    <div class="row">
+      <h2>Flow Chart</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/analysis/03_starting_school_10s_ratio.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+            <p>
+              해설1
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <!--image split-->
+    <div class="row">
+      <h2>Flow Chart</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/analysis/04_testing.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+            <p>
+              해설2
+            </p>
+        </div>
+      </div>
+    </div>
+ 
+
+    <!--image split-->
+    <div class="row">
+      <h2>Flow Chart</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/analysis/05_testing.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+            <p>
+              해설3
+            </p>
+        </div>
+      </div>
+    </div>
+ 
+    
+      
+
+  </div>
+</div>
+
+{% endblock %}
